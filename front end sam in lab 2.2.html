@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  text-align:center;
+  background:linear-gradient(rgb(245, 2, 2),rgb(0, 0, 0));
+  font-family:Arial;
+}
+li {
+  list-style:none;
+  background:white;
+  margin:10px auto;
+  padding:15px;
+  width:180px;
+  border-radius:15px;
+  box-shadow:0 3px 8px rgb(255, 250, 112);
+}
+li:hover { transform:scale(3.6); }
+</style>
+</head>
+<body>
+
+<h2> Fruit List </h2>
+<ul id="list"></ul>
+
+<script>
+let fruits=[" Apple","Mango","Banana",
+"Orange","Dragon Fruit"];
+
+document.getElementById("list").innerHTML =
+fruits.map(f=>`<li>${f}</li>`).join("");
+</script>
+
+</body>
+</html>
